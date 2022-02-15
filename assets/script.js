@@ -17,6 +17,7 @@ credit.textContent = `Created by ${yourName}`
 
 // My code starts here
 
+
 // Gingerbread
 
 let gbCountCell = document.querySelector("#qty-gb")
@@ -37,14 +38,41 @@ gbMinusBtn.addEventListener('click', function(e) {
     }
 )
 
+// Chocolate Chip
 
+let ccCountCell = document.querySelector("#qty-cc")
 
+// Choc Chip Plus Button
+const ccPlusBtn = document.querySelector('#add-cc')
+ccPlusBtn.addEventListener('click', function(e) {
+    cc = cc + 1;
+    ccCountCell.textContent = cc;
+})
 
+// Choc Chip Minus Button
+let ccMinusBtn = document.querySelector('#minus-cc')
+ccMinusBtn.addEventListener('click', function(e) {
+    cc = cc - 1;
+    ccCountCell.textContent = cc;
+    }
+)
 
+// Sugar
 
+let sugarCountCell = document.querySelector('#qty-sugar')
 
+// Sugar Plus Button
+const sugarPlusBtn = document.querySelector('#add-sugar')
+sugarPlusBtn.addEventListener('click', function(e) {
+    sugar = sugar + 1;
+    sugarCountCell.textContent = sugar;
+})
 
-// TODO: Write the code to be run when the "+" button for "Gingerbread" is clicked
+// Sugar Minus Button
+let sugarMinusBtn = document.querySelector('#minus-sugar')
+sugarMinusBtn.addEventListener('click', function(e) {
+    sugar = sugar - 1;
+    sugarCountCell.textContent = sugar;
+    }
+)
 
-
-// TODO: Hook up event listeners for the rest of the buttons
